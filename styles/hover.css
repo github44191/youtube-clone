@@ -1,0 +1,35 @@
+.channelpicture-hover {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  width: 230px;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 5px;
+  opacity: ;
+  box-shadow: 1px 1px 5px 1px rgba(0,0, 0, 0.2);
+  .channelpicture-hover-img img{
+    height: 50px;
+    border-radius: 25px;
+  }
+  .video-author-name p{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .video-stats-hover {
+    font-size: 16px;
+  }
+}
+
+<div class="channelpicture-hover">
+                  <img src="channelpictures/channel-1.jpeg" alt="channelpicture">
+                </div>
+                <div class="video-info">
+                  <div class="video-author-name">
+                    <p>Marques Brownlee</p>
+                  </div>
+                  <div class="video-stats-hover">
+                    15M subscribers
+                  </div>
+                </div>

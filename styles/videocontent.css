@@ -1,0 +1,130 @@
+.video-grid {
+  padding: 80px 20px 0px 95px;
+  background-color: rgb(245, 245, 245);
+  z-index: 50;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+.video-section {
+  display: flex;
+  flex-direction: column;
+}
+.video {
+  position: relative;
+}
+.video img {
+  width: 100%;
+  cursor: pointer;
+}
+.video-time {
+  background-color: black;
+  color: white;
+  width: 30px;
+  padding: 4px 5px ;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+.channel-info {
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+.channelpicture-link{
+  height: 34px;
+  width: 34px;
+  position: relative;
+}
+.channel-link{
+  height: 34px;
+  object-fit: cover;
+  border-radius: 17px;
+  cursor: pointer;
+}
+.channelpicture-hover {
+  background-color: white;
+  display: flex;
+  width: 230px;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0,0, 0, 0.2);
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.hov-ch-pic{
+  height: 50px;
+  border-radius: 25px;
+}
+.video-author-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.video-stats-hover {
+  font-size: 16px;
+}  
+.channelpicture-link:hover .channelpicture-hover
+{
+   opacity: 1;
+}
+.channelpicture-hover:hover {
+  display: none;
+}
+.video-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+.video-title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.video-title a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.video-author a{
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(119, 116, 116);
+}
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(119, 116, 116);
+  margin-bottom: 4px;
+}
+@media (max-width:869px) {
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width:870px) and (max-width:1124px) {
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width:1125px) {
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 80px 20px 0px 275px;
+  }
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
