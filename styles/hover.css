@@ -6,7 +6,7 @@
   padding: 15px;
   border-radius: 5px;
   margin-top: 5px;
-  opacity: ;
+  opacity: 1;
   box-shadow: 1px 1px 5px 1px rgba(0,0, 0, 0.2);
   .channelpicture-hover-img img{
     height: 50px;
@@ -22,14 +22,3 @@
   }
 }
 
-<div class="channelpicture-hover">
-                  <img src="channelpictures/channel-1.jpeg" alt="channelpicture">
-                </div>
-                <div class="video-info">
-                  <div class="video-author-name">
-                    <p>Marques Brownlee</p>
-                  </div>
-                  <div class="video-stats-hover">
-                    15M subscribers
-                  </div>
-                </div>
